@@ -8,15 +8,15 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "/home/jakub/Documents/PlatformIO/Projects/minisumo/include",
-                "/home/jakub/Documents/PlatformIO/Projects/minisumo/src",
+                "/home/jakub/MiniSumo_Wilus/Software/minisumo/include",
+                "/home/jakub/MiniSumo_Wilus/Software/minisumo/src",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/jakub/Documents/PlatformIO/Projects/minisumo/include",
-                    "/home/jakub/Documents/PlatformIO/Projects/minisumo/src",
+                    "/home/jakub/MiniSumo_Wilus/Software/minisumo/include",
+                    "/home/jakub/MiniSumo_Wilus/Software/minisumo/src",
                     ""
                 ]
             },
