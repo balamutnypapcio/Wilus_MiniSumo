@@ -1,0 +1,684 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c5c08d6f-9822-42dc-8aad-78344b0f8ab2")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Sensor_Distance:VL53L0CXV0DH1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VL53L0CXV0DH1"
+				(at 12.065 13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Sensor_Distance:ST_VL53L1x"
+				(at 17.145 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/vl53l0x.pdf"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "2m distance ranging ToF sensor, Optical LGA12"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "VL53L0x ToF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "ST*VL53L1x*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VL53L0CXV0DH1_0_1"
+				(rectangle
+					(start -7.62 12.7)
+					(end 7.62 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "VL53L0CXV0DH1_1_1"
+				(pin power_in line
+					(at 2.54 15.24 270)
+					(length 2.54)
+					(name "AVDDVCSEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "AVDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -15.24 90)
+					(length 2.54)
+					(name "AVSSVCSEL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "XSHUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -10.16 5.08 0)
+					(length 2.54)
+					(name "GPIO1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 7.62 0)
+					(length 2.54) hide
+					(name "DNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 102.87 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31c1fcc2-399a-49e5-9ab3-f613bffa4c3f")
+	)
+	(junction
+		(at 102.87 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ca082e6f-472d-4878-b32a-4908c3231ffa")
+	)
+	(no_connect
+		(at 71.12 44.45)
+		(uuid "43f0aa42-2eff-47cc-87ec-5364c4766cfa")
+	)
+	(wire
+		(pts
+			(xy 101.6 67.31) (xy 102.87 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14997ef2-eb41-47e8-a126-e6014d85423e")
+	)
+	(wire
+		(pts
+			(xy 102.87 31.75) (xy 104.14 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18d6ea33-9612-4da6-9707-c0e37657bbee")
+	)
+	(wire
+		(pts
+			(xy 71.12 44.45) (xy 91.44 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b50ba63-cd91-44a7-901b-8e3d4e02dca9")
+	)
+	(wire
+		(pts
+			(xy 102.87 67.31) (xy 104.14 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5564dd70-e540-4473-9892-71b83589d8c9")
+	)
+	(wire
+		(pts
+			(xy 76.2 49.53) (xy 91.44 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56e5fb10-b2e4-4004-b4d9-5a6d6b09dda4")
+	)
+	(wire
+		(pts
+			(xy 76.2 57.15) (xy 91.44 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fb6d201-551b-43ee-bead-9dcd110acf3d")
+	)
+	(wire
+		(pts
+			(xy 102.87 22.86) (xy 102.87 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "776b900f-7a63-46c0-bcba-fcf715d6c516")
+	)
+	(wire
+		(pts
+			(xy 101.6 31.75) (xy 102.87 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c785e44-000e-48c3-a5e5-46e39f2cb433")
+	)
+	(wire
+		(pts
+			(xy 76.2 52.07) (xy 91.44 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ebfd53-ef8e-4648-aa58-2413136c845f")
+	)
+	(wire
+		(pts
+			(xy 101.6 64.77) (xy 101.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3d51e4b-b84c-4159-a4d5-2f39c2f8118f")
+	)
+	(wire
+		(pts
+			(xy 101.6 34.29) (xy 101.6 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3945c21-cf97-4b4a-bec5-49947b7a0b52")
+	)
+	(wire
+		(pts
+			(xy 102.87 67.31) (xy 102.87 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6686622-4916-4669-bcf4-3b8cfc2ccf5e")
+	)
+	(wire
+		(pts
+			(xy 104.14 67.31) (xy 104.14 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7a9a88d-3176-41a3-838e-e7d064c1e804")
+	)
+	(wire
+		(pts
+			(xy 104.14 31.75) (xy 104.14 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce80f4b-0b32-403f-851b-18e1fe8f7ca2")
+	)
+	(global_label "XSHUT"
+		(shape output)
+		(at 76.2 57.15 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4082a79f-9ccf-49d7-ab18-a867acc19322")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.1672 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 102.87 74.93 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e35457c0-d264-4cea-8909-ad5f653c8b4b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 81.7857 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape output)
+		(at 76.2 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1884cc5-07bc-4c0e-8be7-50f8e4e5c829")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.7072 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 76.2 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f26d693f-c1d4-4404-9077-7a125364cf24")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 68.5354 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+5V"
+		(shape input)
+		(at 102.87 22.86 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f579f829-a166-4746-9bec-34070efba377")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 102.87 16.0043 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Distance:VL53L0CXV0DH1")
+		(at 101.6 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e6f39d4-6ae4-4418-b7db-797f8d3a0056")
+		(property "Reference" "dis_sens_1"
+			(at 110.49 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "VL53L0CXV0DH1"
+			(at 110.49 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Sensor_Distance:ST_VL53L1x"
+			(at 118.745 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/vl53l0x.pdf"
+			(at 104.14 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "2m distance ranging ToF sensor, Optical LGA12"
+			(at 101.6 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "b1923750-32b5-4261-9cc9-5adc6d0ca8df")
+		)
+		(pin "5"
+			(uuid "0dc36fe3-3692-46f6-a5cc-1f6e6a8dee9c")
+		)
+		(pin "9"
+			(uuid "85dbaaba-d542-4b7c-b774-1327e0d44ee4")
+		)
+		(pin "12"
+			(uuid "4828a40c-126e-4fac-a064-b00f337fed99")
+		)
+		(pin "2"
+			(uuid "c3fc9609-e41e-415b-aed6-f13f43a12042")
+		)
+		(pin "4"
+			(uuid "132b05eb-1c1b-4c43-8286-1eb532b2a7b7")
+		)
+		(pin "6"
+			(uuid "c307d90b-a26b-4f8c-8848-f90a6a502260")
+		)
+		(pin "11"
+			(uuid "4467fe03-f508-4ace-b815-f523a8b52596")
+		)
+		(pin "3"
+			(uuid "b9ccc239-ac0c-4a31-a095-e84154199900")
+		)
+		(pin "7"
+			(uuid "f193dcac-677f-434f-baf2-f8afbb74bce6")
+		)
+		(pin "10"
+			(uuid "01a5d37d-1c42-4f0f-9f49-2e656074dabb")
+		)
+		(pin "1"
+			(uuid "8592dde2-524c-44e3-bbc3-1dc0760488d4")
+		)
+		(instances
+			(project "konar2"
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/fdd1297f-f7d7-4fb1-8a34-d11d265bd353"
+					(reference "dis_sens_1")
+					(unit 1)
+				)
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/e51d67b3-bb3a-4e42-88c3-54961a316d15"
+					(reference "dis_sens_2")
+					(unit 1)
+				)
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/d9726454-9fdd-4593-b728-fb7a1927ecf2"
+					(reference "dis_sens_3")
+					(unit 1)
+				)
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/5a42a002-595c-4194-aa34-51fddbdb09a9"
+					(reference "dis_sens_4")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

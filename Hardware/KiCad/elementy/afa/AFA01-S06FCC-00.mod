@@ -1,0 +1,102 @@
+PCBNEW-LibModule-V1  
+# encoding utf-8
+Units mm
+$INDEX
+JUSHUO_AFA01-S06FCC-00
+$EndINDEX
+$MODULE JUSHUO_AFA01-S06FCC-00
+Po 0 0 0 15 00000000 00000000 ~~
+Li JUSHUO_AFA01-S06FCC-00
+Cd 
+Sc 00000000
+At SMD
+Op 0 0 0
+.SolderMask 0
+.SolderPaste 0
+T0 -3.4925 -6.8 1 1 0 0.05 N V 21 "JUSHUO_AFA01-S06FCC-00"
+T1 -2.8575 -5.2125 1 1 0 0.05 N V 21 "VAL**"
+DS -5.95 -2.625 5.95 -2.625 0.127 27
+DS 5.95 -2.625 5.95 1.875 0.127 27
+DS 5.95 1.875 5.95 2.625 0.127 27
+DS 5.95 2.625 -5.95 2.625 0.127 27
+DS -5.95 2.625 -5.95 1.875 0.127 27
+DS -5.95 1.875 -5.95 -2.625 0.127 27
+DS 5.95 1.875 -5.95 1.875 0.127 27
+DS -6.2 -3.85 -6.2 2.875 0.05 26
+DS -6.2 2.875 6.2 2.875 0.05 26
+DS 6.2 2.875 6.2 -3.85 0.05 26
+DS 6.2 -3.85 -6.2 -3.85 0.05 26
+DS 5.95 0.97 5.95 1.875 0.127 21
+DS -5.95 1.875 -5.95 0.97 0.127 21
+DS 5.95 1.875 -5.95 1.875 0.127 21
+DC -2.5 -4.2 -2.4 -4.2 0.2 21
+DC -2.5 -4.2 -2.4 -4.2 0.2 27
+DS -5.95 -2.625 -3 -2.625 0.127 21
+DS -5.95 -1.87 -5.95 -2.625 0.127 21
+DS 5.95 -2.625 3 -2.625 0.127 21
+DS 5.95 -1.87 5.95 -2.625 0.127 21
+$PAD
+Sh "SH1" R 1.8 2.2 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -4.9 -0.45
+$EndPAD
+$PAD
+Sh "SH2" R 1.8 2.2 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 4.9 -0.45
+$EndPAD
+$PAD
+Sh "1" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -2.5 -2.975
+$EndPAD
+$PAD
+Sh "2" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -1.5 -2.975
+$EndPAD
+$PAD
+Sh "3" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po -0.5 -2.975
+$EndPAD
+$PAD
+Sh "4" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 0.5 -2.975
+$EndPAD
+$PAD
+Sh "5" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 1.5 -2.975
+$EndPAD
+$PAD
+Sh "6" R 0.3 1.25 0 0 0
+At SMD N 00088000
+.SolderMask 0
+.SolderPaste 0
+Ne 0 ""
+Po 2.5 -2.975
+$EndPAD
+$EndMODULE JUSHUO_AFA01-S06FCC-00
