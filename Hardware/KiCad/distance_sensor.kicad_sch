@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c5c08d6f-9822-42dc-8aad-78344b0f8ab2")
 	(paper "A4")
 	(lib_symbols
@@ -84,17 +84,35 @@
 				)
 			)
 			(symbol "VL53L0CXV0DH1_1_1"
-				(pin power_in line
-					(at 2.54 15.24 270)
+				(pin open_collector line
+					(at -10.16 5.08 0)
 					(length 2.54)
-					(name "AVDDVCSEL"
+					(name "GPIO1"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -10.16 0 0)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -113,6 +131,43 @@
 						)
 					)
 					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -7.62 0)
+					(length 2.54)
+					(name "XSHUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -7.62 7.62 0)
+					(length 2.54)
+					(hide yes)
+					(name "DNC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -140,7 +195,8 @@
 				)
 				(pin passive line
 					(at 0 -15.24 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -149,24 +205,6 @@
 						)
 					)
 					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 2.54 -15.24 90)
-					(length 2.54)
-					(name "AVSSVCSEL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -194,7 +232,8 @@
 				)
 				(pin passive line
 					(at 0 -15.24 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -210,27 +249,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -10.16 -7.62 0)
-					(length 2.54)
-					(name "XSHUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 0 -15.24 90)
-					(length 2.54) hide
+					(length 2.54)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -246,17 +268,17 @@
 						)
 					)
 				)
-				(pin open_collector line
-					(at -10.16 5.08 0)
+				(pin power_in line
+					(at 2.54 15.24 270)
 					(length 2.54)
-					(name "GPIO1"
+					(name "AVDDVCSEL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -264,35 +286,17 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -7.62 7.62 0)
-					(length 2.54) hide
-					(name "DNC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at -10.16 0 0)
+				(pin power_in line
+					(at 2.54 -15.24 90)
 					(length 2.54)
-					(name "SDA"
+					(name "AVSSVCSEL"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "9"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -301,6 +305,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -662,20 +667,20 @@
 		)
 		(instances
 			(project "konar2"
-				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/fdd1297f-f7d7-4fb1-8a34-d11d265bd353"
-					(reference "dis_sens_1")
-					(unit 1)
-				)
-				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/e51d67b3-bb3a-4e42-88c3-54961a316d15"
-					(reference "dis_sens_2")
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/5a42a002-595c-4194-aa34-51fddbdb09a9"
+					(reference "dis_sens_4")
 					(unit 1)
 				)
 				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/d9726454-9fdd-4593-b728-fb7a1927ecf2"
 					(reference "dis_sens_3")
 					(unit 1)
 				)
-				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/5a42a002-595c-4194-aa34-51fddbdb09a9"
-					(reference "dis_sens_4")
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/e51d67b3-bb3a-4e42-88c3-54961a316d15"
+					(reference "dis_sens_2")
+					(unit 1)
+				)
+				(path "/c9154aa1-f1b7-423e-bcde-0c6434e2094e/fdd1297f-f7d7-4fb1-8a34-d11d265bd353"
+					(reference "dis_sens_1")
 					(unit 1)
 				)
 			)

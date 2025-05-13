@@ -1,12 +1,14 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "19146ad9-9ba2-40a1-9c56-5b501e71e73b")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -125,12 +127,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -221,6 +228,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -282,7 +290,6 @@
 	(hierarchical_label "5V"
 		(shape input)
 		(at 106.68 29.21 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -294,7 +301,6 @@
 	(hierarchical_label "3V3"
 		(shape output)
 		(at 120.65 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -313,7 +319,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "18a5b939-dd4b-4e25-8b06-5fabc280ec5b")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR043"
 			(at 106.68 57.15 0)
 			(effects
 				(font
@@ -391,7 +397,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9283e5ac-d222-4ac4-9fcd-bd1d38a5ef73")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 109.22 33.0199 0)
 			(effects
 				(font
@@ -473,7 +479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bcc7dbd1-420c-45cc-9a49-ffcde8a809a1")
-		(property "Reference" "R9"
+		(property "Reference" "R7"
 			(at 109.22 44.4499 0)
 			(effects
 				(font

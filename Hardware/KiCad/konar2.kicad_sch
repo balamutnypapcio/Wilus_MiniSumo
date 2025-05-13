@@ -1,13 +1,15 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "c9154aa1-f1b7-423e-bcde-0c6434e2094e")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Connector:Conn_01x05_Socket"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -81,57 +83,9 @@
 				)
 			)
 			(symbol "Conn_01x05_Socket_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
+						(xy -1.27 5.08) (xy -0.508 5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -155,7 +109,31 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 5.08) (xy -0.508 5.08)
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.508 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -5.08) (xy -0.508 -5.08)
 					)
 					(stroke
 						(width 0.1524)
@@ -166,33 +144,57 @@
 					)
 				)
 				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
-					(mid -0.5058 2.54)
-					(end 0 2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 5.588)
+					(start 0 4.572)
 					(mid -0.5058 5.08)
-					(end 0 4.572)
+					(end 0 5.588)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 2.032)
+					(mid -0.5058 2.54)
+					(end 0 3.048)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -3.048)
+					(mid -0.5058 -2.54)
+					(end 0 -2.032)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -5.588)
+					(mid -0.5058 -5.08)
+					(end 0 -4.572)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -292,12 +294,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -369,7 +376,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -381,7 +388,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -412,12 +419,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -508,6 +520,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1420,7 +1433,6 @@
 	)
 	(label "XSHUT1"
 		(at 252.73 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1431,7 +1443,6 @@
 	)
 	(label "SCL"
 		(at 251.46 133.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1442,7 +1453,6 @@
 	)
 	(label "SDA"
 		(at 251.46 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1453,7 +1463,6 @@
 	)
 	(label "SCL"
 		(at 251.46 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1464,7 +1473,6 @@
 	)
 	(label "SDA"
 		(at 252.73 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1475,7 +1483,6 @@
 	)
 	(label "XSHUT3"
 		(at 251.46 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1486,7 +1493,6 @@
 	)
 	(label "XSHUT4"
 		(at 251.46 130.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1497,7 +1503,6 @@
 	)
 	(label "motor_dirr_B_inv"
 		(at 158.75 71.12 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1508,7 +1513,6 @@
 	)
 	(label "SDA"
 		(at 251.46 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1519,7 +1523,6 @@
 	)
 	(label "motor_dirr_A_inv"
 		(at 100.33 71.12 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1530,7 +1533,6 @@
 	)
 	(label "XSHUT2"
 		(at 251.46 82.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1541,7 +1543,6 @@
 	)
 	(label "SCL"
 		(at 251.46 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1552,7 +1553,6 @@
 	)
 	(label "SDA"
 		(at 251.46 135.89 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -1563,7 +1563,6 @@
 	)
 	(label "SCL"
 		(at 252.73 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.635 0.635)
@@ -2415,6 +2414,10 @@
 	(sheet
 		(at 49.53 97.79)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2444,13 +2447,13 @@
 		)
 		(pin "line_sensor_1" output
 			(at 69.85 100.33 0)
+			(uuid "d8fdbcab-7123-4750-a964-2a821de27275")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d8fdbcab-7123-4750-a964-2a821de27275")
 		)
 		(instances
 			(project "konar2"
@@ -2463,6 +2466,10 @@
 	(sheet
 		(at 67.31 43.18)
 		(size 21.59 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2492,53 +2499,53 @@
 		)
 		(pin "PWM1" output
 			(at 74.93 66.04 270)
+			(uuid "62dc1447-0505-42cb-9a17-2134364de62c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "62dc1447-0505-42cb-9a17-2134364de62c")
 		)
 		(pin "1_motor_2" input
 			(at 86.36 43.18 90)
+			(uuid "637ec983-7620-4523-95c4-2864d72f7da7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "637ec983-7620-4523-95c4-2864d72f7da7")
 		)
 		(pin "1_motor_1" output
 			(at 83.82 43.18 90)
+			(uuid "f03fcb75-4938-4174-a2c4-5795f4dffa9a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f03fcb75-4938-4174-a2c4-5795f4dffa9a")
 		)
 		(pin "~{A_DIR}" input
 			(at 88.9 59.69 0)
+			(uuid "e389fa3a-5abf-4d05-9525-26d01a5f00f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e389fa3a-5abf-4d05-9525-26d01a5f00f4")
 		)
 		(pin "A_DIR" input
 			(at 88.9 57.15 0)
+			(uuid "f7906214-a464-4746-ab86-a542f46c9708")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f7906214-a464-4746-ab86-a542f46c9708")
 		)
 		(instances
 			(project "konar2"
@@ -2551,6 +2558,10 @@
 	(sheet
 		(at 201.93 58.42)
 		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2580,23 +2591,23 @@
 		)
 		(pin "5V" input
 			(at 201.93 60.96 180)
+			(uuid "c6ba84ac-da45-4f7a-86e0-369f346a74fb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c6ba84ac-da45-4f7a-86e0-369f346a74fb")
 		)
 		(pin "3V3" output
 			(at 214.63 60.96 0)
+			(uuid "5b9407c9-e50f-4382-b8cc-ac3b88346a62")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5b9407c9-e50f-4382-b8cc-ac3b88346a62")
 		)
 		(instances
 			(project "konar2"
@@ -2609,6 +2620,10 @@
 	(sheet
 		(at 88.9 134.62)
 		(size 12.7 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2638,13 +2653,13 @@
 		)
 		(pin "STARTER" input
 			(at 101.6 137.16 0)
+			(uuid "470ede1c-b00a-425c-91df-fc87137d4f4c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "470ede1c-b00a-425c-91df-fc87137d4f4c")
 		)
 		(instances
 			(project "konar2"
@@ -2657,6 +2672,10 @@
 	(sheet
 		(at 87.63 149.86)
 		(size 17.78 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2695,6 +2714,10 @@
 	(sheet
 		(at 157.48 144.78)
 		(size 21.59 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2724,43 +2747,43 @@
 		)
 		(pin "SCK" input
 			(at 157.48 153.67 180)
+			(uuid "1ac0aed0-ea92-4871-a734-eb5119567b8e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1ac0aed0-ea92-4871-a734-eb5119567b8e")
 		)
 		(pin "RST" input
 			(at 157.48 151.13 180)
+			(uuid "783266c2-5530-4ec9-aac0-43e58375ced9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "783266c2-5530-4ec9-aac0-43e58375ced9")
 		)
 		(pin "MOSI" input
 			(at 179.07 151.13 0)
+			(uuid "684dd311-3c9a-4d7e-b133-73ec74b7d503")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "684dd311-3c9a-4d7e-b133-73ec74b7d503")
 		)
 		(pin "MISO" output
 			(at 157.48 148.59 180)
+			(uuid "7c5dcc5b-7aca-4185-83dd-ec7d53fe07c3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7c5dcc5b-7aca-4185-83dd-ec7d53fe07c3")
 		)
 		(instances
 			(project "konar2"
@@ -2773,6 +2796,10 @@
 	(sheet
 		(at 201.93 80.01)
 		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2802,23 +2829,23 @@
 		)
 		(pin "5V" input
 			(at 201.93 82.55 180)
+			(uuid "8a8d9026-cbdd-43a7-8c0c-eb56be88f6ba")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8a8d9026-cbdd-43a7-8c0c-eb56be88f6ba")
 		)
 		(pin "3V3" output
 			(at 214.63 82.55 0)
+			(uuid "3ea13e6b-2579-47eb-8e42-86a5f8ecf7da")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3ea13e6b-2579-47eb-8e42-86a5f8ecf7da")
 		)
 		(instances
 			(project "konar2"
@@ -2831,6 +2858,10 @@
 	(sheet
 		(at 252.73 19.05)
 		(size 19.05 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2869,6 +2900,10 @@
 	(sheet
 		(at 201.93 128.27)
 		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2898,23 +2933,23 @@
 		)
 		(pin "5V" input
 			(at 201.93 130.81 180)
+			(uuid "2236554e-92ab-42fd-882e-e466f0a1c3e1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2236554e-92ab-42fd-882e-e466f0a1c3e1")
 		)
 		(pin "3V3" output
 			(at 214.63 130.81 0)
+			(uuid "c6d0b6ea-cb20-4018-b4ce-4080254147a7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c6d0b6ea-cb20-4018-b4ce-4080254147a7")
 		)
 		(instances
 			(project "konar2"
@@ -2927,6 +2962,10 @@
 	(sheet
 		(at 187.96 30.48)
 		(size 12.7 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -2956,23 +2995,23 @@
 		)
 		(pin "motor1" input
 			(at 187.96 35.56 180)
+			(uuid "9e11b53e-4c48-49e3-99d8-c572aa457fa1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9e11b53e-4c48-49e3-99d8-c572aa457fa1")
 		)
 		(pin "motor2" output
 			(at 187.96 33.02 180)
+			(uuid "784cfe78-ca0e-4c69-b36e-0d85d88a5560")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "784cfe78-ca0e-4c69-b36e-0d85d88a5560")
 		)
 		(instances
 			(project "konar2"
@@ -2985,6 +3024,10 @@
 	(sheet
 		(at 109.22 53.34)
 		(size 17.78 10.16)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3014,43 +3057,43 @@
 		)
 		(pin "A_DIR" input
 			(at 109.22 57.15 180)
+			(uuid "0cf5830c-4c57-42d6-af9d-107aa8328f6c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0cf5830c-4c57-42d6-af9d-107aa8328f6c")
 		)
 		(pin "B_DIR" input
 			(at 127 57.15 0)
+			(uuid "885292a1-006f-41d4-976c-972f21e3b798")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "885292a1-006f-41d4-976c-972f21e3b798")
 		)
 		(pin "~{B_DIR}" input
 			(at 127 59.69 0)
+			(uuid "ebc5396e-96b4-4d68-ba43-2795227f9b8d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ebc5396e-96b4-4d68-ba43-2795227f9b8d")
 		)
 		(pin "~{A_DIR}" input
 			(at 109.22 59.69 180)
+			(uuid "d46ea56f-9c2b-4627-a19b-9b12d1d8b82e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d46ea56f-9c2b-4627-a19b-9b12d1d8b82e")
 		)
 		(instances
 			(project "konar2"
@@ -3063,6 +3106,10 @@
 	(sheet
 		(at 52.07 29.21)
 		(size 12.7 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3092,23 +3139,23 @@
 		)
 		(pin "motor2" output
 			(at 64.77 31.75 0)
+			(uuid "439c3842-d9b5-446e-9405-623721ecf8a3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "439c3842-d9b5-446e-9405-623721ecf8a3")
 		)
 		(pin "motor1" input
 			(at 64.77 34.29 0)
+			(uuid "1833064c-a622-4347-bfc4-99eb7070044b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1833064c-a622-4347-bfc4-99eb7070044b")
 		)
 		(instances
 			(project "konar2"
@@ -3121,6 +3168,10 @@
 	(sheet
 		(at 49.53 118.11)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3150,13 +3201,13 @@
 		)
 		(pin "line_sensor_3" input
 			(at 69.85 120.65 0)
+			(uuid "e239f878-a2c0-4bf9-91d4-148b32e66891")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e239f878-a2c0-4bf9-91d4-148b32e66891")
 		)
 		(instances
 			(project "konar2"
@@ -3169,6 +3220,10 @@
 	(sheet
 		(at 252.73 36.83)
 		(size 19.05 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3207,6 +3262,10 @@
 	(sheet
 		(at 201.93 104.14)
 		(size 12.7 3.81)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3236,23 +3295,23 @@
 		)
 		(pin "5V" input
 			(at 201.93 106.68 180)
+			(uuid "ab64a9f7-0a74-470a-bf11-913462798dcd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ab64a9f7-0a74-470a-bf11-913462798dcd")
 		)
 		(pin "3V3" output
 			(at 214.63 106.68 0)
+			(uuid "ffcca594-574f-4fdd-a43e-0b2cd875254a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ffcca594-574f-4fdd-a43e-0b2cd875254a")
 		)
 		(instances
 			(project "konar2"
@@ -3265,6 +3324,10 @@
 	(sheet
 		(at 114.3 81.28)
 		(size 40.64 50.8)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3294,183 +3357,183 @@
 		)
 		(pin "line_sensor_2" input
 			(at 114.3 110.49 180)
+			(uuid "94f075f1-1c52-4220-99ea-eb156d6fbdaf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "94f075f1-1c52-4220-99ea-eb156d6fbdaf")
 		)
 		(pin "line_sensor_1" input
 			(at 114.3 100.33 180)
+			(uuid "52382758-293d-461b-86f5-6b85daa1b6d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "52382758-293d-461b-86f5-6b85daa1b6d0")
 		)
 		(pin "Motor_speed_1" output
 			(at 114.3 90.17 180)
+			(uuid "57538d80-6af5-44a7-be14-780473753e0a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "57538d80-6af5-44a7-be14-780473753e0a")
 		)
 		(pin "Motor_speed_2" output
 			(at 154.94 90.17 0)
+			(uuid "d8dc97ed-acfd-46cf-8081-1e9ede8a242a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d8dc97ed-acfd-46cf-8081-1e9ede8a242a")
 		)
 		(pin "clock" output
 			(at 142.24 132.08 270)
+			(uuid "6b828d2a-8059-4335-9bfb-ed6b832be17c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6b828d2a-8059-4335-9bfb-ed6b832be17c")
 		)
 		(pin "reset" output
 			(at 139.7 132.08 270)
+			(uuid "7b636117-6e2c-437d-b283-1616a3f4335d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7b636117-6e2c-437d-b283-1616a3f4335d")
 		)
 		(pin "MOSI" output
 			(at 154.94 125.73 0)
+			(uuid "ee850fd8-7fbe-4f37-b529-beeee87a91e7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ee850fd8-7fbe-4f37-b529-beeee87a91e7")
 		)
 		(pin "MISO" input
 			(at 154.94 128.27 0)
+			(uuid "475bf2da-7be5-4981-8170-1450efd441f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "475bf2da-7be5-4981-8170-1450efd441f6")
 		)
 		(pin "XSHUT1" output
 			(at 154.94 95.25 0)
+			(uuid "dc65d7a6-3071-4fa6-840e-d61d27084162")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "dc65d7a6-3071-4fa6-840e-d61d27084162")
 		)
 		(pin "XSHUT2" output
 			(at 154.94 97.79 0)
+			(uuid "c62579b4-d33a-4aca-afd8-95b8a13f66a6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c62579b4-d33a-4aca-afd8-95b8a13f66a6")
 		)
 		(pin "line_sensor_3" input
 			(at 114.3 120.65 180)
+			(uuid "05b86684-68be-4083-aab1-daf3d722f649")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "05b86684-68be-4083-aab1-daf3d722f649")
 		)
 		(pin "XSHUT3" input
 			(at 154.94 100.33 0)
+			(uuid "2fc4e6bc-029b-42a0-930e-803c645e678f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2fc4e6bc-029b-42a0-930e-803c645e678f")
 		)
 		(pin "XSHUT4" input
 			(at 154.94 102.87 0)
+			(uuid "35e3d803-9cce-4620-8b10-33d0a9367c77")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "35e3d803-9cce-4620-8b10-33d0a9367c77")
 		)
 		(pin "Motor_direction_B" output
 			(at 154.94 86.36 0)
+			(uuid "92a33857-35f0-4328-9b4e-fdfe351316f6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "92a33857-35f0-4328-9b4e-fdfe351316f6")
 		)
 		(pin "Motor_direction_A" output
 			(at 114.3 86.36 180)
+			(uuid "0f26eac8-d36a-4827-a018-5e7142062328")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0f26eac8-d36a-4827-a018-5e7142062328")
 		)
 		(pin "STARTER" input
 			(at 114.3 129.54 180)
+			(uuid "247aa3da-8f5d-48d9-948b-ccc2495e681c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "247aa3da-8f5d-48d9-948b-ccc2495e681c")
 		)
 		(pin "SDA" bidirectional
 			(at 154.94 118.11 0)
+			(uuid "d328016e-c635-4511-9328-3185436bf0db")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d328016e-c635-4511-9328-3185436bf0db")
 		)
 		(pin "SCL" output
 			(at 154.94 115.57 0)
+			(uuid "376e5f5b-1190-4466-a7d0-dd3333c954ee")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "376e5f5b-1190-4466-a7d0-dd3333c954ee")
 		)
 		(instances
 			(project "konar2"
@@ -3483,6 +3546,10 @@
 	(sheet
 		(at 218.44 19.05)
 		(size 19.05 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3521,6 +3588,10 @@
 	(sheet
 		(at 162.56 44.45)
 		(size 22.86 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3550,53 +3621,53 @@
 		)
 		(pin "PWM2" output
 			(at 179.07 68.58 270)
+			(uuid "4cfd36c9-662a-4ff1-bc8f-eb613c1b529e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4cfd36c9-662a-4ff1-bc8f-eb613c1b529e")
 		)
 		(pin "2_motor_2" input
 			(at 165.1 44.45 90)
+			(uuid "a7141b66-b34b-4a47-9178-2950a6b0f5e4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a7141b66-b34b-4a47-9178-2950a6b0f5e4")
 		)
 		(pin "2_motor_1" output
 			(at 167.64 44.45 90)
+			(uuid "d3e4a68e-86ff-4ecc-93d0-205de9fcdfd1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "d3e4a68e-86ff-4ecc-93d0-205de9fcdfd1")
 		)
 		(pin "B_DIR" input
 			(at 162.56 59.69 180)
+			(uuid "57de70a5-4688-4c1a-85b2-6a69983f7778")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "57de70a5-4688-4c1a-85b2-6a69983f7778")
 		)
 		(pin "~{B_DIR}" input
 			(at 162.56 62.23 180)
+			(uuid "ff59131d-5e53-4276-9062-37b2d519a438")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ff59131d-5e53-4276-9062-37b2d519a438")
 		)
 		(instances
 			(project "konar2"
@@ -3609,6 +3680,10 @@
 	(sheet
 		(at 49.53 107.95)
 		(size 20.32 5.08)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3638,13 +3713,13 @@
 		)
 		(pin "line_sensor_2" input
 			(at 69.85 110.49 0)
+			(uuid "9a2028b6-b481-40a6-b5ab-495575541be2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9a2028b6-b481-40a6-b5ab-495575541be2")
 		)
 		(instances
 			(project "konar2"
@@ -3657,6 +3732,10 @@
 	(sheet
 		(at 218.44 36.83)
 		(size 19.05 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -3697,4 +3776,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
