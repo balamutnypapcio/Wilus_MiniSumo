@@ -9,8 +9,8 @@
 #define LS_BACK_PIN  PC2  // Przedni prawy czujnik
 
 
-// Próg dla wszystkich czujników - 0.9V (około 184 ADC)
-#define BLACK_THRESHOLD_LEFT 500  // 0.9V
+// Próg dla wszystkich czujników
+#define BLACK_THRESHOLD_LEFT 500  // 2.5V
 #define BLACK_THRESHOLD_RIGHT 220  // 0.9V
 #define BLACK_THRESHOLD_BACK 220  // 0.9V
 

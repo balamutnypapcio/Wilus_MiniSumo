@@ -63,25 +63,23 @@ uint16_t vl53l0x_read_mm(void) {
 }
 
 uint16_t read_sensor(uint8_t addr) {
-    vl53l0x_set_address(addr); // opcjonalne: upewnij się, że czujnik reaguje
-
-    // Zainicjuj pomiar
+    // Trigger single shot
     i2c_start(addr << 1);
-    i2c_write(0x00);  // przykład – zależne od Twojej wersji vl53l0x_simple
-    i2c_write(0x01);
+    i2c_write(0x00);
+    i2c_write(0x01); // SYSRANGE_START
     i2c_stop();
-
-    _delay_ms(30); // czas na pomiar
-
+    _delay_ms(30);
+    
+    // Odczyt wyniku
     i2c_start(addr << 1);
-    i2c_write(0x1E); // rejestr wyniku (adres może się różnić)
+    i2c_write(0x1E);
     i2c_stop();
-
+    
     i2c_start((addr << 1) | 1);
     uint8_t high = i2c_read_ack();
     uint8_t low = i2c_read_nack();
     i2c_stop();
-
+    
     return ((uint16_t)high << 8) | low;
 }
 

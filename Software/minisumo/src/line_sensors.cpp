@@ -9,8 +9,8 @@ void line_sensors_init(void) {
     PORTC &= ~((1 << LS_FRONT_LEFT_PIN) | (1 << LS_FRONT_RIGHT_PIN) | (1 << LS_BACK_PIN));
     
     // Włączenie przetwornika ADC
-    ADCSRA |= (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // Preskaler 128
-    ADMUX |= (1 << REFS0); // Napięcie referencyjne AVCC
+    ADCSRA |= (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
+    ADMUX |= (1 << REFS0); // Napięcie referencyjne AVCC 5V
 }
 
 uint16_t read_adc(uint8_t channel) {
@@ -52,21 +52,21 @@ LineSensorsState read_line_sensors(void) {
     return state;
 }
 
-int8_t get_line_position(void) {
-    LineSensorsState state = read_line_sensors();
-    
-    if(state.left && !state.right) return -2;      // Mocno w lewo
-    if(state.left && state.back) return -1;        // Lekko w lewo
-    if(!state.left && !state.right && state.back) return 0;  // Środek (tylko tył)
-    if(state.right && state.back) return 1;        // Lekko w prawo
-    if(!state.left && state.right) return 2;       // Mocno w prawo
-    if(state.left && state.right && state.back) return 0;    // Wszystkie na linii
-    if(!state.left && !state.right && !state.back) return 0; // Żaden na linii
-    
-    return 0; // Domyślnie zwróć środek
-}
-
 uint8_t is_on_line(void) {
     LineSensorsState state = read_line_sensors();
     return (state.left || state.right || state.back);
 }
+
+//  int8_t get_line_position(void) {
+    //     LineSensorsState state = read_line_sensors();
+        
+    //     if(state.left && !state.right) return -2;      // Mocno w lewo
+    //     if(state.left && state.back) return -1;        // Lekko w lewo
+    //     if(!state.left && !state.right && state.back) return 0;  // Środek (tylko tył)
+    //     if(state.right && state.back) return 1;        // Lekko w prawo
+    //     if(!state.left && state.right) return 2;       // Mocno w prawo
+    //     if(state.left && state.right && state.back) return 0;    // Wszystkie na linii
+    //     if(!state.left && !state.right && !state.back) return 0; // Żaden na linii
+        
+    //     return 0; // Domyślnie zwróć środek
+    // }
