@@ -3,6 +3,10 @@
 
 #include <avr/io.h>
 
+#define F_SCL 400000UL // 400 kHz
+#define PRESCALER 1
+#define TWBR_VAL ((((F_CPU / F_SCL) / PRESCALER) - 16) / 2)
+
 void i2c_init(void);
 uint8_t i2c_start(uint8_t address);
 void i2c_stop(void);

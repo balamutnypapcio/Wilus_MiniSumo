@@ -10,9 +10,11 @@
 
 
 // Próg dla wszystkich czujników
-#define BLACK_THRESHOLD_LEFT 500  // 2.5V
-#define BLACK_THRESHOLD_RIGHT 220  // 0.9V
-#define BLACK_THRESHOLD_BACK 220  // 0.9V
+#define BLACK_THRESHOLD_LEFT 950  // 4.9
+#define BLACK_THRESHOLD_RIGHT 950  // 4.9
+#define BLACK_THRESHOLD_BACK 990  // 4.9
+
+
 
 // Struktura przechowująca stan czujników
 typedef struct {
@@ -38,4 +40,4 @@ int8_t get_line_position(void);
 // Sprawdzenie czy robot jest na linii
 uint8_t is_on_line(void);
 
-#endif // LINE_SENSORS_H
+#endif // LINE_SENSORS
